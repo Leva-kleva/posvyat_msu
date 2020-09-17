@@ -1,4 +1,4 @@
-templates/account/
+templates/account/*
 static/admin/
 settings.py
 media/*.jp?g
