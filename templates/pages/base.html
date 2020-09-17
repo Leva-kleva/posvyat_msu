@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Посвящение МГУ
+{% endblock title %}
+{% block content %}
+<header class="headermain">
+	<a href="https://msuprof.com"><img class="headermain" src="{% static 'img/header_main.svg' %}"></a>
+</header>
+
+<main>
+
+	<img class="leftimg" src="{% static 'img/lomonosov.svg' %}">
+
+	<div class="maindiv">
+
+		<p>
+
+		</p>
+
+		<a href="/registration" class="button yellow"> <div class="buttondiv">ЗАРЕГИСТРИРОВАТЬ<br>КОМАНДУ</div> </a>
+
+	</div>
+{% if user.is_authenticated %} {{ user.username }} {{ user.team.cap.mail }} {% endif %}
+</main>
+{% endblock %}

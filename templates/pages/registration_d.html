@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+*- обязательно
+		<div class="form_c">
+			<form action="{% url 'add_registration' %}" method="post">
+                {% csrf_token %}
+			    <div class="row_form">
+				<label for="subject">Название команды*</label>
+				{{ form.name }}
+
+					<p></p>
+
+					<label for="subject">Форма обучения*</label>
+				{{ form.typestudy }}
+					<p></p>
+
+					<h2>Kapitan*</h2>
+									<label for="subject">Фамилия*</label>
+				{{ form.secondname0 }}
+					<p></p>
+									<label for="subject">Имя*</label>
+				{{ form.firstname0 }}
+					<p></p>
+									<label for="subject">Факультет*</label>
+				{{ form.faculty0 }}
+					<p></p>
+									<label for="subject">Электронная почта*</label>
+				{{ form.mail0 }}
+					<p></p>
+									<label for="subject">Номер телефона*</label>
+				{{ form.phone0 }}
+					<p></p>
+									<label for="subject">Страница в ВК*</label>
+				{{ form.vk0 }}
+
+					<p></p>
+
+					<h2>Участник №1*</h2>
+									<label for="subject">Фамилия*</label>
+				{{ form.secondname1 }}
+					<p></p>
+									<label for="subject">Имя*</label>
+				{{ form.firstname1 }}
+					<p></p>
+									<label for="subject">Факультет*</label>
+				{{ form.faculty1 }}
+					<p></p>
+									<label for="subject">Электронная почта*</label>
+				{{ form.mail1 }}
+					<p></p>
+
+					<h2>Участник №2*</h2>
+									<label for="subject">Фамилия*</label>
+				{{ form.secondname2 }}
+					<p></p>
+									<label for="subject">Имя*</label>
+				{{ form.firstname2 }}
+					<p></p>
+									<label for="subject">Факультет*</label>
+				{{ form.faculty2 }}
+					<p></p>
+									<label for="subject">Электронная почта*</label>
+				{{ form.mail2 }}
+					<p></p>
+
+					<h2>Участник №3*</h2>
+									<label for="subject">Фамилия*</label>
+				{{ form.secondname3 }}
+					<p></p>
+									<label for="subject">Имя*</label>
+				{{ form.firstname3 }}
+					<p></p>
+									<label for="subject">Факультет*</label>
+				{{ form.faculty3 }}
+					<p></p>
+									<label for="subject">Электронная почта*</label>
+				{{ form.mail3 }}
+					<p></p>
+
+					<h2>Участник №4</h2>
+									<label for="subject">Фамилия</label>
+				{{ form.secondname4 }}
+					<p></p>
+									<label for="subject">Имя</label>
+				{{ form.firstname4 }}
+					<p></p>
+									<label for="subject">Факультет</label>
+				{{ form.faculty4 }}
+					<p></p>
+									<label for="subject">Электронная почта</label>
+				{{ form.mail4 }}
+					<p></p>
+
+					<h2>Участник №5</h2>
+									<label for="subject">Фамилия</label>
+				{{ form.secondname5 }}
+					<p></p>
+									<label for="subject">Имя</label>
+				{{ form.firstname5 }}
+					<p></p>
+									<label for="subject">Факультет</label>
+				{{ form.faculty5 }}
+					<p></p>
+									<label for="subject">Электронная почта</label>
+				{{ form.mail5 }}
+					<p></p>
+
+<p></p>
+
+					<label for="subject">Согласие на обработку данных*</label>
+				{{ form.agree }}
+					<p></p>
+					<label for="subject">Откуда узнал о посвящении?*</label>
+				{{ form.where | urlize }}
+<p></p>
+					<label for="subject">Вступил в профсоюз?*</label>
+				{{ form.enter }}
+<p></p>
+				<input type="submit" value="Отправить">
+			</div>
+			</form>
+		</div>
+
+</body>
+</html>

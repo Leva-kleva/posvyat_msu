@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+		<div class="form_c">
+			<form action="{% url 'add_registration' %}" method="post">
+                {% csrf_token %}
+			    <div class="row_form">
+				<label for="subject">registratioN</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.name }}</textarea>
+
+				<label for="subject">registratioN</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.typestudy }}</textarea>
+					<p>cap</p>
+				<label for="subject">name2</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.cap.secondname }}</textarea>
+
+				<label for="subject">name1</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.cap.firstname }}</textarea>
+
+				<label for="subject">faculty</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.cap.faculty }}</textarea>
+
+				<label for="subject">mail</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.cap.mail }}</textarea>
+
+				<label for="subject">phone</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.cap.phone }}</textarea>
+
+					<p>firstman</p>
+				<label for="subject">name2</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.firstman.secondname }}</textarea>
+
+				<label for="subject">name1</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.firstman.firstname }}</textarea>
+
+				<label for="subject">faculty</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.firstman.faculty }}</textarea>
+
+				<label for="subject">mail</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.firstman.mail }}</textarea>
+
+				<label for="subject">phone</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.firstman.phone }}</textarea>
+
+					<p>cap</p>
+				<label for="subject">name2</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.secondman.secondname }}</textarea>
+
+				<label for="subject">name1</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.secondman.firstname }}</textarea>
+
+				<label for="subject">faculty</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.secondman.faculty }}</textarea>
+
+				<label for="subject">mail</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.secondman.mail }}</textarea>
+
+				<label for="subject">phone</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.secondman.phone }}</textarea>
+
+					<p>cap</p>
+				<label for="subject">name2</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.thirdman.secondname }}</textarea>
+
+				<label for="subject">name1</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.thirdman.firstname }}</textarea>
+
+				<label for="subject">faculty</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.thirdman.faculty }}</textarea>
+
+				<label for="subject">mail</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.thirdman.mail }}</textarea>
+
+				<label for="subject">phone</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.thirdman.phone }}</textarea>
+
+					<p>cap</p>
+				<label for="subject">name2</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.fourman.secondname }}</textarea>
+
+				<label for="subject">name1</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.fourman.firstname }}</textarea>
+
+				<label for="subject">faculty</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.fourman.faculty }}</textarea>
+
+				<label for="subject">mail</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.fourman.mail }}</textarea>
+
+				<label for="subject">phone</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.fourman.phone }}</textarea>
+
+					<p>cap</p>
+				<label for="subject">name2</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.fiveman.secondname }}</textarea>
+
+				<label for="subject">name1</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.fiveman.firstname }}</textarea>
+
+				<label for="subject">faculty</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.fiveman.faculty }}</textarea>
+
+				<label for="subject">mail</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.fiveman.mail }}</textarea>
+
+				<label for="subject">phone</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.fiveman.phone }}</textarea>
+<p></p>
+					<label for="subject">agree</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.agree }}</textarea>
+
+									<label for="subject">where</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.where }}</textarea>
+
+									<label for="subject">enter</label>
+				<textarea id="name" name="name" placeholder="Имя...">{{ form.enter }}</textarea>
+
+				<input type="submit" value="Отправить">
+			</div>
+			</form>
+		</div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Регистрация
+{% endblock title %}
+{% block refresh %}
+<script src="{% static 'js/script.js' %}"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.js" type="text/javascript"></script>
+{% endblock refresh %}
+{% block content %}
+<header class="header">
+    <img class="logo" src="{% static 'img/logo_header.svg' %}">
+    <a href="https://msuprof.com"><img class="titel" src="{% static 'img/title_reg.svg' %}"></a>
+</header>
+<main>
+
+    <img class="rightimg" src="{% static 'img/sideimg.svg' %}">
+
+    <div class="form_c">
+        <form action="{% url 'add_registration' %}" method="post">
+            {% csrf_token %}
+            <div class="row_form">
+                <label for="subject">Название команды*</label>
+                {{ form.name }}
+                <p></p>
+
+                <label for="subject">Форма обучения*</label>
+                {{ form.typestudy }}
+                <p></p>
+
+                <h2 class="green">Капитан*</h2>
+                <label for="subject">Фамилия*</label>
+                {{ form.secondname0 }}
+                <p></p>
+
+                <label for="subject">Имя*</label>
+                {{ form.firstname0 }}
+                <p></p>
+
+                <label for="subject">Факультет*</label>
+                {{ form.faculty0 }}
+                <p></p>
+
+                <label for="subject">Электронная почта*</label>
+                {{ form.mail0 }}
+                <p></p>
+
+                <!-- <label for="subject">Номер телефона*</label>
+                {{ form.phone0 }}
+                <p></p> -->
+
+                <label for="subject">Номер телефона*</label>
+                {{ form.phone0 }}
+                <script>
+                    $(".phone_mask").mask("+7(999)999-99-99");
+                </script>
+                <p></p>
+
+                <label for="subject">Страница в ВК*</label>
+				{{ form.vk0 }}
+                <p></p>
+
+                <h2 class="yellow">Участник №1*</h2>
+                <label for="subject">Фамилия*</label>
+                {{ form.secondname1 }}
+                <p></p>
+
+                <label for="subject">Имя*</label>
+                {{ form.firstname1 }}
+                <p></p>
+
+                <label for="subject">Факультет*</label>
+                {{ form.faculty1 }}
+                <p></p>
+
+                <label for="subject">Электронная почта*</label>
+				{{ form.mail1 }}
+                <p></p>
+
+                <h2 class="yellow">Участник №2*</h2>
+                <label for="subject">Фамилия*</label>
+				{{ form.secondname2 }}
+                <p></p>
+
+                <label for="subject">Имя*</label>
+				{{ form.firstname2 }}
+                <p></p>
+
+                <label for="subject">Факультет*</label>
+				{{ form.faculty2 }}
+                <p></p>
+
+                <label for="subject">Электронная почта*</label>
+				{{ form.mail2 }}
+                <p></p>
+
+                <h2 class="yellow">Участник №3*</h2>
+                <label for="subject">Фамилия*</label>
+				{{ form.secondname3 }}
+                <p></p>
+
+                <label for="subject">Имя*</label>
+				{{ form.firstname3 }}
+                <p></p>
+
+                <label for="subject">Факультет*</label>
+				{{ form.faculty3 }}
+                <p></p>
+
+                <label for="subject">Электронная почта*</label>
+				{{ form.mail3 }}
+                <p></p>
+
+                <h2 class="yellow">Участник №4</h2>
+                <label for="subject">Фамилия</label>
+				{{ form.secondname4 }}
+                <p></p>
+
+                <label for="subject">Имя</label>
+				{{ form.firstname4 }}
+                <p></p>
+
+                <label for="subject">Факультет</label>
+				{{ form.faculty4 }}
+                <p></p>
+
+                <label for="subject">Электронная почта</label>
+				{{ form.mail4 }}
+                <p></p>
+
+                <h2 class="yellow">Участник №5</h2>
+                <label for="subject">Фамилия</label>
+				{{ form.secondname5 }}
+                <p></p>
+
+                <label for="subject">Имя</label>
+				{{ form.firstname5 }}
+                <p></p>
+
+                <label for="subject">Факультет</label>
+				{{ form.faculty5 }}
+                <p></p>
+
+                <label for="subject">Электронная почта</label>
+				{{ form.mail5 }}
+                <p></p>
+
+
+                <label for="subject">Откуда ты узнал о посвящении?*</label>
+                <ul for="kek">
+
+                    {{ form.where.0 }}
+                </ul>
+                    <span id="kek" class="checkmark"></span>
+                <p></p>
+
+                <label for="subject">Вступил в профсоюз?*</label>
+				    {{ form.enter }}
+                <p></p>
+
+                <label class="container" >Согласие на обработку данных*
+                    {{ form.agree }}
+                    <span class="checkmark"></span>
+
+                </label>
+                <p></p>
+
+                <input class="button1 green" type="submit" value="Отправить" onclick="myFunction()">
+            </div>
+        </form>
+    </div>
+</main>
+<hr>
+{% endblock %}

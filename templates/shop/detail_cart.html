@@ -1,0 +1,16 @@
+<p>Команда: {{ request.user.team.name }}</p>
+<p>Баланс: {{ request.user.team.score }}</p>
+<p>Корзина: </p>
+Товаров в корзине {{request.session.cart|length}}
+<p>
+{% for key,value in request.session.cart.items %}
+    <p> Название: {{value.name}}
+    Цена: {{value.price}}
+    Количество: {{value.quantity}}
+    Сумма: {{ value.price }}</p>
+{% endfor %}
+</p>
+<p>ИТОГО: {{ total.cart_total_amount }}</p>
+<span><a href="{% url 'send_cart' %}">Отправить заказ</a></span>
+<p></p>
+<span><a href="{% url 'shop' %}">Вернуться в магазин</a></span>

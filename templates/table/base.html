@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Рейтинг
+{% endblock title %}
+{% block content %}
+<table>
+
+    {% for team in table %}
+    <tr>
+        {% for el in team %}
+            {% if el == -1 %}
+                <td> ... </td>
+            {% elif el == -2 %}
+                <td> + </td>
+            {% elif el == -3 %}
+                <td> ... </td>
+            {% else %}
+                <td>{{ el }}</td>
+            {% endif %}
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
+{% endblock content %}

@@ -1,0 +1,342 @@
+html{
+	font-family: 'Century Gothic';
+}
+
+body, html {
+	font-family: 'Century Gothic';
+  height: 100%;
+  margin: 0;
+  font-size: 18pt;
+  color: #212121;
+}
+
+main {
+	padding-bottom: 5%;
+	margin-bottom: 5%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p, a, button, form, input, textarea, ul, li {
+	font-weight: 400;
+	color: #212121;
+	font-size: 12pt;
+	-moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+}
+
+a:hover {
+	color: #e83636;
+}
+
+h3 {
+	font-size: 14pt;
+}
+h2 {
+	font-weight: 400;
+  border: none;
+  color: black;
+  padding-right: -200px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 26px;
+  border-radius: 40px;
+}
+.yellow {
+	background-color: #FFE485;
+}
+.green {
+	background-color: #A2E8E2;
+}
+
+h1 {
+	font-size: 18pt;
+}
+
+
+hr {
+	border: 0px;
+	padding: 1em;
+	width: 100%;
+}
+
+main {
+	width: 100%;
+}
+
+.headermain {
+	width: 100%;
+}
+
+.header {
+	height: 160px;
+}
+
+.leftimg {
+	margin-left: 15%;
+	width: 40%;
+	float: left;	
+}
+
+.rightimg {
+	position: absolute;
+	right: 0;
+	top: 360px;
+	width: 15%;
+}
+
+.logo {
+	margin-left: 5%;
+	float: left;
+	width: 30%;
+}
+
+
+.titel {
+	float: right;
+	height: 200px;
+	max-width: 90%;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.button {
+	font-family: 'Century Gothic';
+  border: none;
+  color: black;
+  padding: 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 32px;
+  margin: auto;
+  float: right;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+.button1 {
+	font-family: 'Century Gothic';
+  border: none;
+  color: black;
+  padding: 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 32px;
+  margin: auto;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+
+.buttondiv {
+ margin: -10px;
+}
+
+.maindiv{
+	margin-top: 10%;
+	margin-right: 15%;
+	margin-left: 5%;
+	width: 25%;
+	float: left;
+}
+
+.maindiv p {
+	padding: 10px 10px;
+	font-size: 22px;
+	text-align: right;
+}
+
+
+.form_c {
+	width: 40%;
+	margin-right: 20%;
+	float: right;
+}
+@media screen and (max-width: 600px) {
+	.form_c {
+		width: 80%;
+		margin-right: 5%;
+	}
+}
+@media screen and (max-width: 600px) {
+	.logo {
+		width: 40%;
+	}
+	
+	.maindiv{
+		margin-top: 5%;
+		margin-right: 5%;
+		margin-left: 5%;
+		width: 80%;
+	}
+	
+	.leftimg {
+		margin-left: 5%;
+		margin-right: 5%;
+		width: 80%;
+		float: left;	
+	}
+}
+/* ------- форма отправки заявки -------- */
+input, select, textarea {
+	font-family: 'Century Gothic';
+	font-size: 18px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 0.5em;
+  border: 2px solid #000;
+  resize: none;
+  outline: none;
+  border-radius: 30px;
+}
+
+#subject {
+	height: 10em;
+}
+#name {
+	height: 4em;
+}
+#website {
+	height: 4em;
+	width: 100%;
+  padding: 1em;
+  border: 2px solid #ccc;
+  resize: none;
+  outline: none;
+  border-radius: 1em;
+}
+#country, #phone {
+  display: block;
+  width: auto;
+}
+
+label {
+  padding: 0em 0em;
+  width: 100%;
+  margin-right: 10%;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #eee;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.success {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	display: show;
+	background-color: rgba(0,0,0,0.5);
+}
+.suc_text {
+	 margin: 10% 20%;
+	 padding: 5%;
+	 text-align: center;
+	 background-color: #fff;
+	 width: 60%;
+	 height: 60%;
+ }
+ 
+ .close {
+  cursor: pointer;
+  position: fixed;
+  top: 28%;
+  right: 22%;
+  margin: -16px;
+  padding: 6px 12px;
+  transform: translate(0%, -50%);
+}
+
+.close:hover {background: #eee;}
+
+@media screen and (max-width: 600px) {
+	.close {
+		top: 10%;
+		right: 15%;
+	}
+	
+	.suc_text {
+		margin: 10% 10%;
+		width: 80%;
+		height: 60%;
+	}
+}

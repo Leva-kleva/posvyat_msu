@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    {% load static %}
+    <meta charset=UTF-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock title %}</title>
+    <!-- <title>ПОСВЯЩЕНИЕ МГУ 2020</title> -->
+    <link rel="shortcut icon" href="{% static 'img/minilogo.jpg' %}" sizes="32x32" type="image/jpg">
+    <!--[if lt IE 9]><script src=http://html5shiv.googlecode.com/svn/trunk/html5.js></script><![endif]-->
+    <link href="{% static 'css/main.css' %}" rel="stylesheet" />
+    <link href="{% static 'font/stylesheet.css' %}" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="{% static 'js/menu.js' %}"></script>
+    {% block refresh %} {% endblock refresh %}
+</head>
+
+<body>
+	{% block content %}
+	{% endblock content %}
+</body>
+</html>
